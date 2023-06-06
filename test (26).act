@@ -1,0 +1,36 @@
+<!-- o9 Solutions Inc. (c) 2012 Live Server -->
+<Command>
+  <ID>{1.1}</ID>
+  <Type>IBPL</Type>
+  <Text>/* Check output of python plugin execution at version level */
+Select ([Location].[Location] * [Version].[Version Name].[MEIO_Core_Run] * [Item].[Item] ) on row, ({Measure.[IO WMAPE Calculated], Measure.[IO Average Demand Interval], Measure.[IO Demand Pattern]}) on column</Text>
+  <Output>Location	Version Name	Item	IO WMAPE Calculated	IO Average Demand Interval	IO Demand Pattern	
+DC_1	MEIO_Core_Run	FG1	0.39756486	1.0833334	Non-Intermittent	
+DC_1	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.21032846	1.0833334	Non-Intermittent	
+DC_2	MEIO_Core_Run	FG1	0.32273602	1.0833334	Non-Intermittent	
+DC_2	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.4676806	1.0833334	Non-Intermittent	
+Plant_1	MEIO_Core_Run	FG1	0.22875157	1.1666666	Non-Intermittent	
+Plant_1	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.21032846	1.1666666	Non-Intermittent	
+Plant_1	MEIO_Core_Run	PackagingMaterial1	0.22875157	1.1666666	Non-Intermittent	
+Plant_1	MEIO_Core_Run	RM1	0.22875157	1.1666666	Non-Intermittent	
+Plant_1	MEIO_Core_Run	RM2	0.22875157	1.1666666	Non-Intermittent	
+Plant_1	MEIO_Core_Run	SFG1	0.22875157	1.1666666	Non-Intermittent	
+Plant_2	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.4676806	1.1666666	Non-Intermittent	
+Ship_To1	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.6734207	1	Non-Intermittent	
+Ship_To2	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.40376985	1	Non-Intermittent	
+Ship_To3	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.29930192	1	Non-Intermittent	
+Ship_To4	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.39282343	1	Non-Intermittent	
+Ship_To5	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.66267467	1	Non-Intermittent	
+Ship_To6	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.4676806	1	Non-Intermittent	
+Store1	MEIO_Core_Run	FG1	0.7121588	1	Non-Intermittent	
+Store2	MEIO_Core_Run	FG1	0.5050785	1	Non-Intermittent	
+Store3	MEIO_Core_Run	FG1	0.5355404	1	Non-Intermittent	
+Store4	MEIO_Core_Run	FG1	0.59294564	1	Non-Intermittent	
+Supplier_1	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.21032846	1.25	Non-Intermittent	
+Supplier_1	MEIO_Core_Run	RM1	0.22875157	1.25	Non-Intermittent	
+Supplier_1	MEIO_Core_Run	RM2	0.22875157	1.25	Non-Intermittent	
+Supplier_2	MEIO_Core_Run	I_500_Multi_Echelon_Mfg_Dist	0.4676806	1.25	Non-Intermittent	
+Supplier_2	MEIO_Core_Run	PackagingMaterial1	0.22875157	1.25	Non-Intermittent	
+</Output>
+  <RunTime>0ms</RunTime>
+</Command>
