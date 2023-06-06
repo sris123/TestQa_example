@@ -1,0 +1,506 @@
+[Wed, 17 May 2023 16:03:12] WARNING [tenant_api.py.get_tenant_id:135] SmokeTestOps17056 tenant is not exists on this mygcpdevaa.o9solutions.com. It will be created as new tenant
+[Wed, 17 May 2023 16:03:12] INFO [tenant_api.py.create_a_empty_tenant:24] Smoke Test started on mygcpdevaa.o9solutions.com
+[Wed, 17 May 2023 16:03:34] INFO [tenant_api.py.create_a_empty_tenant:53] Successfully created the SmokeTestOps17056 empty tenant and it's tenant ID is : 6217
+[Wed, 17 May 2023 16:03:34] DEBUG [platform_api_settings.py.enable_platform_api:45] Platform API Enabled.. Ready to Create API key in SmokeTestOps17056.
+[Wed, 17 May 2023 16:03:35] DEBUG [platform_api_settings.py.fetch_tenant_user_id:73] User ID of Current User: 22341
+[Wed, 17 May 2023 16:03:35] INFO [platform_api_settings.py.create_api_key:112] API Key Created SuccessFully
+[Wed, 17 May 2023 16:03:35] INFO [platform_api_settings.py.create_api_key:113] API Key of SmokeTestOps17056:c5sx5nw5.a2z6boq8anwb96fvkyn3xhu
+[Wed, 17 May 2023 16:03:35] INFO [o9_platform_api_invoker.py.import_config_runner:311] ****************************************************************************************************
+[Wed, 17 May 2023 16:03:37] DEBUG [tenant_config_api.py.import_config:36] March_2023_config.zip is now imported to SmokeTestOps17056
+[Wed, 17 May 2023 16:04:07] INFO [tenant_config_api.py.upload_config:92] March_2023_config.zip Uploaded to SmokeTestOps17056.
+[Wed, 17 May 2023 16:05:58] INFO [o9_platform_api_invoker.py.upload_config_runner:360] Tenant Config uploaded Successfully
+[Wed, 17 May 2023 16:05:59] DEBUG [live_server_api.py.fetch_ls_config:33] Fetched the Live Server Details of SmokeTestOps17056 and the current status is Uninstalled
+[Wed, 17 May 2023 16:05:59] DEBUG [o9_platform_api_invoker.py.control_ls_runner:422] Added 30 seconds break before start/stop the Live Server
+[Wed, 17 May 2023 16:06:29] DEBUG [o9_platform_api_invoker.py.control_ls_runner:430] Added a 45 second break to complete the Install request
+[Wed, 17 May 2023 16:07:14] DEBUG [o9_platform_api_invoker.py.control_ls_runner:432] Resumed After Install request Processed
+[Wed, 17 May 2023 16:07:15] DEBUG [o9_platform_api_invoker.py.control_ls_runner:434] Added a 45 second more(1) to complete the Start request.
+[Wed, 17 May 2023 16:08:01] DEBUG [live_server_api.py.fetch_ls_config:33] Fetched the Live Server Details of SmokeTestOps17056 and the current status is Running
+[Wed, 17 May 2023 16:08:01] DEBUG [o9_platform_api_invoker.py.control_ls_runner:438] Resumed After Start request Processed.
+[Wed, 17 May 2023 16:08:01] DEBUG [live_server_api.py.fetch_ls_config:33] Fetched the Live Server Details of SmokeTestOps17056 and the current status is Running
+[Wed, 17 May 2023 16:08:01] INFO [o9_platform_api_invoker.py.control_ls_runner:449] ****************************************************************************************************
+[Wed, 17 May 2023 16:08:02] DEBUG [platform_api_settings.py.fetch_build_number:364] Found the Build version of mygcpdevaa.o9solutions.com
+[Wed, 17 May 2023 16:08:03] DEBUG [conda_service_api.py.is_conda_version_available:120] User selected conda version : 2020_10 is available
+[Wed, 17 May 2023 16:08:04] DEBUG [o9_platform_api_invoker.py.create_conda_service_runner:138] Added a 60 second break to complete the Conda Service Creation
+[Wed, 17 May 2023 16:09:04] DEBUG [o9_platform_api_invoker.py.create_conda_service_runner:142] Added a 45 second more(1) to complete the Conda Service Creation
+[Wed, 17 May 2023 16:09:50] DEBUG [o9_platform_api_invoker.py.create_conda_service_runner:142] Added a 45 second more(2) to complete the Conda Service Creation
+[Wed, 17 May 2023 16:10:35] DEBUG [o9_platform_api_invoker.py.create_conda_service_runner:142] Added a 45 second more(3) to complete the Conda Service Creation
+[Wed, 17 May 2023 16:11:21] DEBUG [o9_platform_api_invoker.py.create_conda_service_runner:142] Added a 45 second more(4) to complete the Conda Service Creation
+[Wed, 17 May 2023 16:12:06] DEBUG [o9_platform_api_invoker.py.create_conda_service_runner:142] Added a 45 second more(5) to complete the Conda Service Creation
+[Wed, 17 May 2023 16:12:52] INFO [o9_platform_api_invoker.py.create_conda_service_runner:163] Conda Created SuccessFully
+[Wed, 17 May 2023 16:12:52] INFO [o9_platform_api_invoker.py.validate_python_env_display_in_kibo_ui:186] ****************************************************************************************************
+[Wed, 17 May 2023 16:12:52] DEBUG [o9_platform_api_invoker.py.validate_python_env_display_in_kibo_ui:194] Added a 60 second break to validate the Python Service Deployment in Kibo UI
+[Wed, 17 May 2023 16:13:52] INFO [o9_platform_api_invoker.py.validate_python_env_display_in_kibo_ui:210] Python env is published successfully in kibo UI
+[Wed, 17 May 2023 16:13:52] WARNING [o9_platform_api_invoker.py.validate_pyplugin_version_with_platform_build:252] Both Platform and PypluginHelpers packages are on the different build
+[Wed, 17 May 2023 16:13:52] WARNING [o9_platform_api_invoker.py.validate_pyplugin_version_with_platform_build:253] Platform version build number : 1.23.0516.1
+[Wed, 17 May 2023 16:13:52] WARNING [o9_platform_api_invoker.py.validate_pyplugin_version_with_platform_build:254] PypluginHelpers version build number : 1.23.0516.2005
+[Wed, 17 May 2023 16:13:52] INFO [o9_platform_api_invoker.py.upload_input_data_runner:496] ****************************************************************************************************
+[Wed, 17 May 2023 16:13:52] DEBUG [o9_platform_api_invoker.py.upload_input_data_runner:497] Added 60 seconds break before uploading input data
+[Wed, 17 May 2023 16:14:52] INFO [o9_platform_api_invoker.py.upload_input_data_runner:499] Uploading the input data files
+[Wed, 17 May 2023 16:14:54] INFO [tenant_upload_data_api.py.data_upload:91] Dimension.DimDepartment.csv Uploaded
+[Wed, 17 May 2023 16:14:55] INFO [tenant_upload_data_api.py.data_upload:91] Dimension.DimDepartment_Python.csv Uploaded
+[Wed, 17 May 2023 16:14:56] INFO [tenant_upload_data_api.py.data_upload:91] Dimension.DimStore.csv Uploaded
+[Wed, 17 May 2023 16:14:57] INFO [tenant_upload_data_api.py.data_upload:91] Dimension.DimStore_Python.csv Uploaded
+[Wed, 17 May 2023 16:14:58] INFO [tenant_upload_data_api.py.data_upload:91] Dimension.DimWalmartTime.csv Uploaded
+[Wed, 17 May 2023 16:14:59] INFO [tenant_upload_data_api.py.data_upload:91] Dimension.DimWalmartTime_Python.csv Uploaded
+[Wed, 17 May 2023 16:15:00] INFO [tenant_upload_data_api.py.data_upload:91] Fact.FactPlanningMeasures.(0).csv Uploaded
+[Wed, 17 May 2023 16:15:03] INFO [tenant_upload_data_api.py.data_upload:91] Fact.FactPlanningMeasures_Walmart.(0).csv Uploaded
+[Wed, 17 May 2023 16:15:04] INFO [tenant_upload_data_api.py.data_upload:91] Fact.FactSalesMeasures.(0).csv Uploaded
+[Wed, 17 May 2023 16:15:14] INFO [tenant_upload_data_api.py.data_upload:91] Fact.FactSalesMeasures_Walmart.(0).csv Uploaded
+[Wed, 17 May 2023 16:15:14] INFO [o9_platform_api_invoker.py.upload_input_data_runner:504] Added a 15 second break to complete uploaded data
+[Wed, 17 May 2023 16:15:29] INFO [o9_platform_api_invoker.py.upload_input_data_runner:506] Verifying the All the Uploaded files................
+[Wed, 17 May 2023 16:15:30] INFO [o9_platform_api_invoker.py.upload_input_data_runner:510] Python Plugins Input Files Have been SuccessFully Uploaded To SmokeTestOps17056
+[Wed, 17 May 2023 16:15:31] INFO [o9_platform_api_invoker.py.upload_input_data_runner:513] AI Predict Plugins Input Files Have been SuccessFully Uploaded To SmokeTestOps17056
+[Wed, 17 May 2023 16:15:34] INFO [o9_platform_api_invoker.py.upload_input_data_runner:518] All Files Uploaded SuccessFully
+[Wed, 17 May 2023 16:15:34] DEBUG [user_role_extras_api.py.fetch_auth_group_roles:29] Fetched the all the available roles
+[Wed, 17 May 2023 16:15:34] DEBUG [user_role_extras_api.py.is_developer_role_exist:47] Developer role is already present in mygcpdevaa.o9solutions.com authorization group
+[Wed, 17 May 2023 16:15:35] INFO [user_role_extras_api.py.add_dev_role_in_tenant:122] Adding Developer role in SmokeTestOps17056
+[Wed, 17 May 2023 16:15:35] INFO [user_role_extras_api.py.add_dev_role_in_tenant:125] Successfully Added Developer Role in SmokeTestOps17056
+[Wed, 17 May 2023 16:15:36] INFO [user_role_extras_api.py.add_debug_role_in_tenant:169] Adding Debug role in SmokeTestOps17056
+[Wed, 17 May 2023 16:15:36] INFO [user_role_extras_api.py.add_debug_role_in_tenant:172] Successfully Added Debug Role in SmokeTestOps17056
+[Wed, 17 May 2023 16:15:36] INFO [user_role_extras_api.py.add_debug_role_in_tenant:173] ****************************************************************************************************
+[Wed, 17 May 2023 16:15:36] DEBUG [platform_api_settings.py.check_lw_or_mw_config_settings:144] Checking the Python LW/MW Config on this environment
+[Wed, 17 May 2023 16:15:37] INFO [platform_api_settings.py.check_lw_or_mw_config_settings:151] LW/MW Config is Enabled on this Environment
+[Wed, 17 May 2023 16:15:37] INFO [o9_platform_api_invoker.py.code_library_import_runner:593] ****************************************************************************************************
+[Wed, 17 May 2023 16:15:38] DEBUG [code_library_1_0_api.py.code_library_import:58] SmokeTest_CodeLibrary1.zip Code Library is imported to SmokeTestOps17056 to run Python Unsliced Plugin.
+[Wed, 17 May 2023 16:15:39] INFO [o9_platform_api_invoker.py.code_library_upload_runner:638] SmokeTest_CodeLibrary1.zip Code Library Uploaded SuccessFully
+[Wed, 17 May 2023 16:15:39] INFO [o9_platform_api_invoker.py.code_library_upload_runner:653] ****************************************************************************************************
+[Wed, 17 May 2023 16:15:39] INFO [py_unsliced_with_codelib_1_0.py.code_lib_1_0_configured_python_unsliced_plugin_creation:29] Added 120 seconds sleep before calling API to create Plugin configured with Code Library
+[Wed, 17 May 2023 16:17:39] INFO [py_unsliced_with_codelib_1_0.py.code_lib_1_0_configured_python_unsliced_plugin_creation:31] Started to Create Python Unsliced Plugin with CodeLibrary 1.0
+[Wed, 17 May 2023 16:17:41] INFO [o9_platform_api_invoker.py.python_unsliced_with_codelib_creation:1063] ****************************************************************************************************
+[Wed, 17 May 2023 16:17:41] DEBUG [code_library_2_0_api.py.get_git_accounts:148] trying to fetch All the Git Accounts in mygcpdevaa.o9solutions.com
+[Wed, 17 May 2023 16:17:41] DEBUG [code_library_2_0_api.py.get_git_accounts:153] Fetched All the Git Accounts in mygcpdevaa.o9solutions.com
+[Wed, 17 May 2023 16:17:41] DEBUG [code_library_2_0_api.py.is_smoke_test_git_account_exist:170] Smoke Test git account is already present in mygcpdevaa.o9solutions.com
+[Wed, 17 May 2023 16:17:41] DEBUG [code_library_2_0_api.py.add_git_repo:107] Adding Git repository...
+[Wed, 17 May 2023 16:18:10] ERROR [code_library_2_0_api.py.add_git_repo:113] Failed to add git repository
+[Wed, 17 May 2023 16:18:10] DEBUG [code_library_2_0_api.py.fetch_repo_number:68] Fetched Repo ID:1914
+[Wed, 17 May 2023 16:18:11] DEBUG [code_library_2_0_api.py.git_install_package:134] Code lib Package Install Request sent
+[Wed, 17 May 2023 16:18:13] INFO [py_lightweight_and_mediumweight.py.python_lightweight_execution:22] Python LightWeight Execution Started...
+[Wed, 17 May 2023 16:18:20] INFO [py_lightweight_and_mediumweight.py.python_lightweight_execution:37] Python LightWeight mode Execution is Completed
+[Wed, 17 May 2023 16:18:20] INFO [o9_platform_api_invoker.py.python_lightweight_execution_runner:814] ****************************************************************************************************
+[Wed, 17 May 2023 16:18:21] INFO [py_lightweight_and_mediumweight.py.python_mediumweight_execution:53] Python Medium Weight Plugin Mode Execution Started...
+[Wed, 17 May 2023 16:18:26] INFO [py_lightweight_and_mediumweight.py.python_mediumweight_execution:66] Python MediumWeight mode Execution is Completed
+[Wed, 17 May 2023 16:18:27] INFO [o9_platform_api_invoker.py.python_mediumweight_execution_runner:853] ****************************************************************************************************
+[Wed, 17 May 2023 16:18:27] INFO [py_sliced_and_unsliced.py.python_sliced_execution:53] Python Sliced Plugin Execution Started with Standard CSV Mode...
+[Wed, 17 May 2023 16:22:42] INFO [py_sliced_and_unsliced.py.python_sliced_execution:65] Python Sliced Execution is Completed
+[Wed, 17 May 2023 16:22:43] INFO [o9_platform_api_invoker.py.python_sliced_execution_runner:740] ****************************************************************************************************
+[Wed, 17 May 2023 16:22:50] INFO [py_sliced_and_unsliced.py.python_unsliced_execution:22]  Python Unsliced Execution Started with Parquet Mode...
+[Wed, 17 May 2023 16:24:56] INFO [py_sliced_and_unsliced.py.python_unsliced_execution:36] Python Unsliced Plugin Execution is Completed
+[Wed, 17 May 2023 16:24:57] INFO [o9_platform_api_invoker.py.python_unsliced_execution_runner:703] ****************************************************************************************************
+[Wed, 17 May 2023 16:24:57] DEBUG [platform_api_settings.py.check_pyspark_plugin_settings:169] Checking the Pyspark settings on this environment
+[Wed, 17 May 2023 16:24:57] INFO [platform_api_settings.py.check_pyspark_plugin_settings:177] PySpark setting - EnablePySparkPlugin is enabled in this mygcpdevaa.o9solutions.com
+[Wed, 17 May 2023 16:24:58] INFO [pyspark_unsliced.py.pyspark_unsliced_plugin_execution:22] PySpark Unsliced Execution Started...
+[Wed, 17 May 2023 16:24:58] ERROR [o9_platform_api_invoker.py.pyspark_unsliced_execution_runner:775] Failed to Execute PySpark Unsliced Plugin. Check kibo logs for more information - the JSON object must be str, bytes or bytearray, not dict
+Traceback (most recent call last):
+  File "C:\Users\srishti.singh\Documents\AASmoketest\may_qrtrly\may_quarterly\AASmokeTestHealthCheckSuite (26)\AASmokeTestHealthCheckSuite\smoke_test_scripts\o9_platform_api_invoker.py", line 753, in pyspark_unsliced_execution_runner
+    data = json.loads(json_data)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+[Wed, 17 May 2023 16:24:58] INFO [o9_platform_api_invoker.py.pyspark_unsliced_execution_runner:777] ****************************************************************************************************
+[Wed, 17 May 2023 16:24:59] INFO [ai_plugin_modes.py.ai_plugin_tournament_mode_execution:39] Added 60 seconds sleep before calling API to execute the AIP Tournament mode
+[Wed, 17 May 2023 16:25:59] INFO [ai_plugin_modes.py.ai_plugin_tournament_mode_execution:41] AIPredict Tournament Mode Execution Started...
+[Wed, 17 May 2023 16:26:00] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(0)
+[Wed, 17 May 2023 16:26:00] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:326] Added 60 seconds break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:27:00] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(0) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:27:00] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(1)
+[Wed, 17 May 2023 16:28:00] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(1) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:28:02] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(2)
+[Wed, 17 May 2023 16:29:02] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(2) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:29:02] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(3)
+[Wed, 17 May 2023 16:30:02] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(3) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:30:03] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(4)
+[Wed, 17 May 2023 16:31:03] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(4) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:31:04] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(5)
+[Wed, 17 May 2023 16:32:04] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(5) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:32:04] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(6)
+[Wed, 17 May 2023 16:33:04] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(6) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:33:05] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(7)
+[Wed, 17 May 2023 16:34:05] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(7) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:34:05] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(8)
+[Wed, 17 May 2023 16:35:05] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(8) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:35:06] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(9)
+[Wed, 17 May 2023 16:36:06] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(9) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:36:06] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(10)
+[Wed, 17 May 2023 16:37:06] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(10) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:37:07] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(11)
+[Wed, 17 May 2023 16:38:07] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(11) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:38:08] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(12)
+[Wed, 17 May 2023 16:39:08] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(12) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:39:08] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(13)
+[Wed, 17 May 2023 16:40:08] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(13) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:40:09] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(14)
+[Wed, 17 May 2023 16:41:09] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(14) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:41:10] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(15)
+[Wed, 17 May 2023 16:42:10] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(15) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:42:11] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(16)
+[Wed, 17 May 2023 16:43:11] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(16) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:43:11] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(17)
+[Wed, 17 May 2023 16:44:12] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(17) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:44:12] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(18)
+[Wed, 17 May 2023 16:45:12] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(18) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:45:12] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(19)
+[Wed, 17 May 2023 16:46:12] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(19) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:46:13] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(20)
+[Wed, 17 May 2023 16:47:13] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(20) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:47:13] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(21)
+[Wed, 17 May 2023 16:48:13] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(21) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:48:14] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(22)
+[Wed, 17 May 2023 16:49:14] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(22) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:49:14] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(23)
+[Wed, 17 May 2023 16:50:14] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(23) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:50:15] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(24)
+[Wed, 17 May 2023 16:51:15] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(24) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:51:15] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(25)
+[Wed, 17 May 2023 16:52:15] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(25) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:52:16] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(26)
+[Wed, 17 May 2023 16:53:16] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(26) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:53:16] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Tournament job is running(27)
+[Wed, 17 May 2023 16:54:16] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(27) break for the current Tournament job to complete the execution
+[Wed, 17 May 2023 16:54:17] INFO [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:319] Tournament job completed
+[Wed, 17 May 2023 16:54:17] INFO [o9_platform_api_invoker.py.ai_tournament_execution_runner:888] ****************************************************************************************************
+[Wed, 17 May 2023 16:54:18] INFO [ai_plugin_modes.py.find_the_number_of_recipes:246] Total number of recipes generated by the Tournament mode : 3
+[Wed, 17 May 2023 16:54:18] INFO [o9_platform_api_invoker.py.run_end_to_end_smoke_test:1536] recipe id of RandomForestModelBuilder: 291f5293-dd03-4da2-bd6e-253be0c52567
+[Wed, 17 May 2023 16:54:19] INFO [ai_plugin_modes.py.ai_plugin_forecast_mode_execution:97] AIPredict Forecast Mode(RandomForestModelBuilder) Execution Started...
+[Wed, 17 May 2023 16:54:19] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(0)
+[Wed, 17 May 2023 16:54:19] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:326] Added 60 seconds break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 16:55:19] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(0) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 16:55:20] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(1)
+[Wed, 17 May 2023 16:56:20] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(1) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 16:56:21] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(2)
+[Wed, 17 May 2023 16:57:21] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(2) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 16:57:22] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(3)
+[Wed, 17 May 2023 16:58:22] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(3) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 16:58:22] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(4)
+[Wed, 17 May 2023 16:59:22] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(4) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 16:59:24] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(5)
+[Wed, 17 May 2023 17:00:24] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(5) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:00:24] INFO [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:319] Forecast job completed
+[Wed, 17 May 2023 17:00:26] ERROR [o9_platform_api_invoker.py.ai_forecast_execution_runner:952] Failed to Execute Forecast Mode. Check kibo logs for more information - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\srishti.singh\Documents\AASmoketest\may_qrtrly\may_quarterly\AASmokeTestHealthCheckSuite (26)\AASmokeTestHealthCheckSuite\smoke_test_scripts\o9_platform_api_invoker.py", line 934, in ai_forecast_execution_runner
+    data_value = data["Data"][0]["C1"]["Value"]
+IndexError: list index out of range
+[Wed, 17 May 2023 17:00:26] INFO [o9_platform_api_invoker.py.ai_forecast_execution_runner:954] ****************************************************************************************************
+[Wed, 17 May 2023 17:00:27] INFO [ai_plugin_modes.py.ai_plugin_training_mode_execution:156] AIPredict Training Mode(RandomForestModelBuilder) Execution Started...
+[Wed, 17 May 2023 17:00:28] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(0)
+[Wed, 17 May 2023 17:00:28] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:326] Added 60 seconds break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:01:28] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(0) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:01:29] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(1)
+[Wed, 17 May 2023 17:02:29] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(1) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:02:29] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(2)
+[Wed, 17 May 2023 17:03:29] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(2) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:03:30] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(3)
+[Wed, 17 May 2023 17:04:30] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(3) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:04:30] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(4)
+[Wed, 17 May 2023 17:05:30] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(4) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:05:31] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(5)
+[Wed, 17 May 2023 17:06:31] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(5) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:06:31] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(6)
+[Wed, 17 May 2023 17:07:31] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(6) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:07:32] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(7)
+[Wed, 17 May 2023 17:08:32] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(7) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:08:33] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(8)
+[Wed, 17 May 2023 17:09:33] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(8) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:09:33] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(9)
+[Wed, 17 May 2023 17:10:33] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(9) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:10:34] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(10)
+[Wed, 17 May 2023 17:11:34] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(10) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:11:34] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(11)
+[Wed, 17 May 2023 17:12:34] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(11) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:12:35] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(12)
+[Wed, 17 May 2023 17:13:35] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(12) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:13:35] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(13)
+[Wed, 17 May 2023 17:14:35] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(13) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:14:36] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(14)
+[Wed, 17 May 2023 17:15:36] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(14) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:15:36] INFO [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:319] Training job completed
+[Wed, 17 May 2023 17:15:37] INFO [o9_platform_api_invoker.py.ai_training_execution_runner:991] ****************************************************************************************************
+[Wed, 17 May 2023 17:15:38] INFO [o9_platform_api_invoker.py.run_end_to_end_smoke_test:1536] recipe id of O9FullyConnectedModelBuilder: aaad5190-94db-4dfd-84b9-e684e84a0b99
+[Wed, 17 May 2023 17:15:38] INFO [ai_plugin_modes.py.ai_plugin_forecast_mode_execution:97] AIPredict Forecast Mode(O9FullyConnectedModelBuilder) Execution Started...
+[Wed, 17 May 2023 17:15:39] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(0)
+[Wed, 17 May 2023 17:15:39] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:326] Added 60 seconds break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:16:39] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(0) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:16:39] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(1)
+[Wed, 17 May 2023 17:17:39] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(1) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:17:40] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(2)
+[Wed, 17 May 2023 17:18:40] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(2) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:18:40] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(3)
+[Wed, 17 May 2023 17:19:40] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(3) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:19:41] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(4)
+[Wed, 17 May 2023 17:20:41] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(4) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:20:41] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(5)
+[Wed, 17 May 2023 17:21:41] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(5) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:21:42] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(6)
+[Wed, 17 May 2023 17:22:42] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(6) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:22:42] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(7)
+[Wed, 17 May 2023 17:23:42] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(7) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:23:44] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(8)
+[Wed, 17 May 2023 17:24:44] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(8) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:24:44] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(9)
+[Wed, 17 May 2023 17:25:44] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(9) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:25:45] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(10)
+[Wed, 17 May 2023 17:26:45] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(10) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:26:46] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(11)
+[Wed, 17 May 2023 17:27:46] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(11) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:27:46] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(12)
+[Wed, 17 May 2023 17:28:46] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(12) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:28:47] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(13)
+[Wed, 17 May 2023 17:29:47] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(13) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:29:47] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(14)
+[Wed, 17 May 2023 17:30:47] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(14) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:30:48] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(15)
+[Wed, 17 May 2023 17:31:48] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(15) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:31:49] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(16)
+[Wed, 17 May 2023 17:32:49] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(16) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:32:50] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(17)
+[Wed, 17 May 2023 17:33:50] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(17) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:33:50] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(18)
+[Wed, 17 May 2023 17:34:50] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(18) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:34:52] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(19)
+[Wed, 17 May 2023 17:35:52] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(19) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 17:35:52] INFO [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:319] Forecast job completed
+[Wed, 17 May 2023 17:35:52] ERROR [o9_platform_api_invoker.py.ai_forecast_execution_runner:952] Failed to Execute Forecast Mode. Check kibo logs for more information - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\srishti.singh\Documents\AASmoketest\may_qrtrly\may_quarterly\AASmokeTestHealthCheckSuite (26)\AASmokeTestHealthCheckSuite\smoke_test_scripts\o9_platform_api_invoker.py", line 934, in ai_forecast_execution_runner
+    data_value = data["Data"][0]["C1"]["Value"]
+IndexError: list index out of range
+[Wed, 17 May 2023 17:35:52] INFO [o9_platform_api_invoker.py.ai_forecast_execution_runner:954] ****************************************************************************************************
+[Wed, 17 May 2023 17:35:53] INFO [ai_plugin_modes.py.ai_plugin_training_mode_execution:156] AIPredict Training Mode(O9FullyConnectedModelBuilder) Execution Started...
+[Wed, 17 May 2023 17:35:54] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(0)
+[Wed, 17 May 2023 17:35:54] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:326] Added 60 seconds break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:36:54] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(0) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:36:54] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(1)
+[Wed, 17 May 2023 17:37:54] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(1) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:37:55] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(2)
+[Wed, 17 May 2023 17:38:55] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(2) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:38:56] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(3)
+[Wed, 17 May 2023 17:39:56] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(3) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:39:56] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(4)
+[Wed, 17 May 2023 17:40:56] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(4) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:40:56] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(5)
+[Wed, 17 May 2023 17:41:56] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(5) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:41:57] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(6)
+[Wed, 17 May 2023 17:42:57] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(6) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:42:58] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(7)
+[Wed, 17 May 2023 17:43:58] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(7) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:43:59] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(8)
+[Wed, 17 May 2023 17:44:59] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(8) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:45:00] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(9)
+[Wed, 17 May 2023 17:46:00] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(9) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:46:02] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(10)
+[Wed, 17 May 2023 17:47:02] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(10) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:47:02] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(11)
+[Wed, 17 May 2023 17:48:02] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(11) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:48:03] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(12)
+[Wed, 17 May 2023 17:49:03] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(12) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:49:04] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(13)
+[Wed, 17 May 2023 17:50:04] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(13) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:50:05] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(14)
+[Wed, 17 May 2023 17:51:05] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(14) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:51:05] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(15)
+[Wed, 17 May 2023 17:52:05] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(15) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:52:06] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(16)
+[Wed, 17 May 2023 17:53:06] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(16) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:53:06] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(17)
+[Wed, 17 May 2023 17:54:06] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(17) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:54:09] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(18)
+[Wed, 17 May 2023 17:55:09] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(18) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:55:09] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(19)
+[Wed, 17 May 2023 17:56:09] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(19) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:56:09] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(20)
+[Wed, 17 May 2023 17:57:10] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(20) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:57:10] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(21)
+[Wed, 17 May 2023 17:58:10] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(21) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:58:11] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(22)
+[Wed, 17 May 2023 17:59:11] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(22) break for the current Training job to complete the execution
+[Wed, 17 May 2023 17:59:11] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(23)
+[Wed, 17 May 2023 18:00:11] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(23) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:00:12] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(24)
+[Wed, 17 May 2023 18:01:12] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(24) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:01:12] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(25)
+[Wed, 17 May 2023 18:02:12] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(25) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:02:13] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(26)
+[Wed, 17 May 2023 18:03:13] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(26) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:03:13] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(27)
+[Wed, 17 May 2023 18:04:13] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(27) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:04:14] INFO [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:319] Training job completed
+[Wed, 17 May 2023 18:04:15] INFO [o9_platform_api_invoker.py.ai_training_execution_runner:991] ****************************************************************************************************
+[Wed, 17 May 2023 18:04:16] INFO [o9_platform_api_invoker.py.run_end_to_end_smoke_test:1536] recipe id of O9PredictLevelEnsembleModelBuilder: c0703703-cc28-4f05-bafb-252fcdbcb9d3
+[Wed, 17 May 2023 18:04:16] INFO [ai_plugin_modes.py.ai_plugin_forecast_mode_execution:97] AIPredict Forecast Mode(O9PredictLevelEnsembleModelBuilder) Execution Started...
+[Wed, 17 May 2023 18:04:17] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(0)
+[Wed, 17 May 2023 18:04:17] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:326] Added 60 seconds break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 18:05:17] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(0) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 18:05:18] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(1)
+[Wed, 17 May 2023 18:06:18] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(1) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 18:06:19] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(2)
+[Wed, 17 May 2023 18:07:19] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(2) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 18:07:19] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(3)
+[Wed, 17 May 2023 18:08:19] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(3) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 18:08:20] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(4)
+[Wed, 17 May 2023 18:09:20] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(4) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 18:09:22] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(5)
+[Wed, 17 May 2023 18:10:22] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(5) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 18:10:22] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(6)
+[Wed, 17 May 2023 18:11:22] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(6) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 18:11:23] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Forecast job is running(7)
+[Wed, 17 May 2023 18:12:23] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(7) break for the current Forecast job to complete the execution
+[Wed, 17 May 2023 18:12:23] INFO [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:319] Forecast job completed
+[Wed, 17 May 2023 18:12:24] ERROR [o9_platform_api_invoker.py.ai_forecast_execution_runner:952] Failed to Execute Forecast Mode. Check kibo logs for more information - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\srishti.singh\Documents\AASmoketest\may_qrtrly\may_quarterly\AASmokeTestHealthCheckSuite (26)\AASmokeTestHealthCheckSuite\smoke_test_scripts\o9_platform_api_invoker.py", line 934, in ai_forecast_execution_runner
+    data_value = data["Data"][0]["C1"]["Value"]
+IndexError: list index out of range
+[Wed, 17 May 2023 18:12:24] INFO [o9_platform_api_invoker.py.ai_forecast_execution_runner:954] ****************************************************************************************************
+[Wed, 17 May 2023 18:12:25] INFO [ai_plugin_modes.py.ai_plugin_training_mode_execution:156] AIPredict Training Mode(O9PredictLevelEnsembleModelBuilder) Execution Started...
+[Wed, 17 May 2023 18:12:25] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(0)
+[Wed, 17 May 2023 18:12:25] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:326] Added 60 seconds break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:13:25] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(0) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:13:26] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(1)
+[Wed, 17 May 2023 18:14:26] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(1) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:14:26] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(2)
+[Wed, 17 May 2023 18:15:26] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(2) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:15:27] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(3)
+[Wed, 17 May 2023 18:16:27] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(3) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:16:27] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(4)
+[Wed, 17 May 2023 18:17:27] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(4) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:17:28] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(5)
+[Wed, 17 May 2023 18:18:28] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(5) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:18:28] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(6)
+[Wed, 17 May 2023 18:19:28] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(6) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:19:29] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(7)
+[Wed, 17 May 2023 18:20:29] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(7) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:20:29] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(8)
+[Wed, 17 May 2023 18:21:29] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(8) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:21:30] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(9)
+[Wed, 17 May 2023 18:22:30] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(9) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:22:30] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(10)
+[Wed, 17 May 2023 18:23:30] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(10) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:23:31] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(11)
+[Wed, 17 May 2023 18:24:31] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(11) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:24:33] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(12)
+[Wed, 17 May 2023 18:25:33] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(12) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:25:34] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(13)
+[Wed, 17 May 2023 18:26:34] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(13) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:26:34] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(14)
+[Wed, 17 May 2023 18:27:34] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(14) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:27:34] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(15)
+[Wed, 17 May 2023 18:28:35] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(15) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:28:35] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(16)
+[Wed, 17 May 2023 18:29:35] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(16) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:29:36] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(17)
+[Wed, 17 May 2023 18:30:36] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(17) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:30:36] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(18)
+[Wed, 17 May 2023 18:31:36] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(18) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:31:37] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(19)
+[Wed, 17 May 2023 18:32:37] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(19) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:32:38] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(20)
+[Wed, 17 May 2023 18:33:38] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(20) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:33:38] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(21)
+[Wed, 17 May 2023 18:34:38] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(21) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:34:40] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:324] Training job is running(22)
+[Wed, 17 May 2023 18:35:40] DEBUG [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:328] Added 60 seconds more(22) break for the current Training job to complete the execution
+[Wed, 17 May 2023 18:35:41] INFO [ai_plugin_modes.py.is_ai_predict_plugin_job_completed:319] Training job completed
+[Wed, 17 May 2023 18:35:41] INFO [o9_platform_api_invoker.py.ai_training_execution_runner:991] ****************************************************************************************************
+[Wed, 17 May 2023 18:35:41] INFO [platform_api_settings.py.fetch_default_system_settings:225] Fetching mygcpdevaa.o9solutions.com's default system settings...
+[Wed, 17 May 2023 18:35:43] INFO [platform_api_settings.py.fetch_default_system_settings:231] Fetched mygcpdevaa.o9solutions.com's default system settings
+[Wed, 17 May 2023 18:35:43] INFO [o9_flow.py.get_ml_flow_settings:29] Successfully able to fetch the value of mlflowTrackingUri settings
+[Wed, 17 May 2023 18:35:43] INFO [o9_flow.py.check_ml_flow_server:42] Make sure that you should be connected to VPN in order check ML flow server
+[Wed, 17 May 2023 18:35:43] ERROR [o9_flow.py.check_ml_flow_server:52] Please check with your VPN Connection - HTTPConnectionPool(host='o9services.gq10064.google.o9solutions.net', port=31013): Max retries exceeded with url: //mlflow (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A1A61A2608>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Traceback (most recent call last):
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1277, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1323, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1272, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1032, in _send_output
+    self.send(msg)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 972, in send
+    self.connect()
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001A1A61A2608>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 786, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='o9services.gq10064.google.o9solutions.net', port=31013): Max retries exceeded with url: //mlflow (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A1A61A2608>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\srishti.singh\Documents\AASmoketest\may_qrtrly\may_quarterly\AASmokeTestHealthCheckSuite (26)\AASmokeTestHealthCheckSuite\smoke_test_scripts\o9_environment_resources\o9_flow.py", line 45, in check_ml_flow_server
+    response = requests.request("GET", url, headers=headers)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\srishti.singh\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='o9services.gq10064.google.o9solutions.net', port=31013): Max retries exceeded with url: //mlflow (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A1A61A2608>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+[Wed, 17 May 2023 18:35:43] ERROR [o9_platform_api_invoker.py.check_ml_flow_runner:1190] Failed to check ML flow server - 'NoneType' object has no attribute 'status_code'
+Traceback (most recent call last):
+  File "C:\Users\srishti.singh\Documents\AASmoketest\may_qrtrly\may_quarterly\AASmokeTestHealthCheckSuite (26)\AASmokeTestHealthCheckSuite\smoke_test_scripts\o9_platform_api_invoker.py", line 1178, in check_ml_flow_runner
+    if response.status_code == 200:
+AttributeError: 'NoneType' object has no attribute 'status_code'
+[Wed, 17 May 2023 18:35:43] INFO [utils.py.download_logs:66] Total Time Taken to Complete Service on :2:32:07.785426
+[Wed, 17 May 2023 18:35:47] INFO [utils.py.download_logs:80] kibo_logs_2023-05-171033.csv kibo logs are downloaded successfully
+[Wed, 17 May 2023 18:35:47] INFO [o9_platform_api_invoker.py.python_pyspark_plugin_log_validation:1282] started plugin log execution
+[Wed, 17 May 2023 18:35:47] INFO [Plugin_log_validation.py.log_validation:105] Kibo Logs Validation Failed for Python_MediumWeight_Plugin
+[Wed, 17 May 2023 18:35:47] INFO [Plugin_log_validation.py.log_validation:105] Kibo Logs Validation Failed for PySpark_Unsliced_Plugin
+[Wed, 17 May 2023 18:35:47] INFO [o9_platform_api_invoker.py.python_pyspark_plugin_log_validation:1305] Completed plugin log execution
+[Wed, 17 May 2023 18:35:47] INFO [conda_service_api.py.delete_conda:99] Started to Delete Conda Service on SmokeTestOps17056
+[Wed, 17 May 2023 18:35:48] DEBUG [o9_platform_api_invoker.py.delete_conda_runner:1203] Added a 15 second break to complete the Conda Service Deletion
+[Wed, 17 May 2023 18:36:04] WARNING [conda_service_api.py.fetch_conda_status:73] Failed to Fetch the conda status, conda might have deleted - list indices must be integers or slices, not str
+[Wed, 17 May 2023 18:36:04] INFO [o9_platform_api_invoker.py.delete_conda_runner:1226] Conda Deleted SuccessFully
+[Wed, 17 May 2023 18:36:04] DEBUG [live_server_api.py.fetch_ls_config:33] Fetched the Live Server Details of SmokeTestOps17056 and the current status is Running
+[Wed, 17 May 2023 18:36:04] DEBUG [o9_platform_api_invoker.py.control_ls_runner:422] Added 30 seconds break before start/stop the Live Server
+[Wed, 17 May 2023 18:36:35] DEBUG [o9_platform_api_invoker.py.control_ls_runner:430] Added a 45 second break to complete the Stop request
+[Wed, 17 May 2023 18:37:20] DEBUG [o9_platform_api_invoker.py.control_ls_runner:432] Resumed After Stop request Processed
+[Wed, 17 May 2023 18:37:21] DEBUG [o9_platform_api_invoker.py.control_ls_runner:434] Added a 45 second more(1) to complete the Uninstall request.
+[Wed, 17 May 2023 18:38:06] DEBUG [live_server_api.py.fetch_ls_config:33] Fetched the Live Server Details of SmokeTestOps17056 and the current status is Uninstalled
+[Wed, 17 May 2023 18:38:06] DEBUG [o9_platform_api_invoker.py.control_ls_runner:438] Resumed After Uninstall request Processed.
+[Wed, 17 May 2023 18:38:07] DEBUG [live_server_api.py.fetch_ls_config:33] Fetched the Live Server Details of SmokeTestOps17056 and the current status is Uninstalled
+[Wed, 17 May 2023 18:38:07] INFO [o9_platform_api_invoker.py.control_ls_runner:449] ****************************************************************************************************
+[Wed, 17 May 2023 18:38:08] DEBUG [platform_api_settings.py.set_dsn_settings_to_empty_value:403] Updated the DSN settings to empty value
+[Wed, 17 May 2023 18:38:08] INFO [platform_api_settings.py.find_and_delete_api_key:432] ApiKey deleted successfully
+[Wed, 17 May 2023 18:38:08] DEBUG [platform_api_settings.py.find_and_delete_api_key:437] ****************************************************************************************************
+[Wed, 17 May 2023 18:38:08] INFO [tenant_api.py.delete_tenant:148] Started to Delete SmokeTestOps17056 Tenant
+[Wed, 17 May 2023 18:39:36] INFO [tenant_api.py.delete_tenant:164] SmokeTestOps17056 Tenant SuccessFully Deleted
+[Wed, 17 May 2023 18:39:36] INFO [o9_platform_api_invoker.py.delete_tenant_runner:1242] ****************************************************************************************************
+[Wed, 17 May 2023 18:39:37] INFO [utils.py.generate_smoke_test_report:130] report_2023-05-171033.html report generated
+[Wed, 17 May 2023 18:39:37] INFO [o9_platform_api_invoker.py.send_email_notification_invoker:1689] Preparing to send a email..
+[Wed, 17 May 2023 18:39:37] INFO [platform_api_settings.py.fetch_default_system_settings:225] Fetching mygcpdevaa.o9solutions.com's default system settings...
+[Wed, 17 May 2023 18:39:37] INFO [platform_api_settings.py.fetch_default_system_settings:231] Fetched mygcpdevaa.o9solutions.com's default system settings
+[Wed, 17 May 2023 18:39:37] DEBUG [platform_api_settings.py.fetch_smtp_server_details:332] Started to Fetch SMTP server details..
+[Wed, 17 May 2023 18:39:37] INFO [platform_api_settings.py.fetch_smtp_server_details:336] Found the SmtpServerDetails
+[Wed, 17 May 2023 18:39:37] DEBUG [platform_api_settings.py.fetch_smtp_server_details:339] Found the value of SmtpServerDetails
+[Wed, 17 May 2023 18:39:37] DEBUG [email_notification.py.send_email_notification:58] report_2023-05-171033.html is attached to e-mail
+[Wed, 17 May 2023 18:39:37] DEBUG [email_notification.py.send_email_notification:58] kibo_logs_2023-05-171033.csv is attached to e-mail
