@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": 5,
    "id": "bd336321-51ec-486d-a88d-f52307f68a45",
    "metadata": {},
    "outputs": [
@@ -32,7 +32,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": 6,
    "id": "ee1938e1-90e2-4079-9edd-fc825dc84e98",
    "metadata": {},
    "outputs": [
@@ -63,7 +63,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
+   "execution_count": 7,
    "id": "009cd14e-aefb-4a43-a7fd-a3db8e444a83",
    "metadata": {},
    "outputs": [
@@ -90,6 +90,117 @@
    "cell_type": "code",
    "execution_count": null,
    "id": "cb301083-5ca0-43ec-bf1b-ece45949a744",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "application/vnd.jupyter.widget-view+json": {
+       "model_id": "",
+       "version_major": 2,
+       "version_minor": 0
+      },
+      "text/plain": [
+       "FloatProgress(value=0.0, bar_style='info', description='Progress:', layout=Layout(height='25px', width='50%'),…"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "+-----------+\n",
+      "|  namespace|\n",
+      "+-----------+\n",
+      "|    default|\n",
+      "|    ekgdev1|\n",
+      "|     gktest|\n",
+      "|     mypoc1|\n",
+      "|schema_5781|\n",
+      "|schema_6090|\n",
+      "|schema_6175|\n",
+      "|schema_6221|\n",
+      "|schema_6334|\n",
+      "|schema_6355|\n",
+      "+-----------+"
+     ]
+    }
+   ],
+   "source": [
+    "spark.sql('show schemas').show()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "c1926491-a20f-423b-a275-b8e4c38082ee",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "application/vnd.jupyter.widget-view+json": {
+       "model_id": "",
+       "version_major": 2,
+       "version_minor": 0
+      },
+      "text/plain": [
+       "FloatProgress(value=0.0, bar_style='info', description='Progress:', layout=Layout(height='25px', width='50%'),…"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "+-----------+--------------+-----------+\n",
+      "|  namespace|     tableName|isTemporary|\n",
+      "+-----------+--------------+-----------+\n",
+      "|schema_5781|demandpriority|      false|\n",
+      "|schema_5781| dimdemandtype|      false|\n",
+      "|schema_5781|       dimitem|      false|\n",
+      "|schema_5781|   dimlocation|      false|\n",
+      "|schema_5781|       dimtime|      false|\n",
+      "|schema_5781|    dimversion|      false|\n",
+      "+-----------+--------------+-----------+"
+     ]
+    }
+   ],
+   "source": [
+    "spark.sql('SHOW TABLES IN schema_5781').show()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dfde91c0-fc9f-42e4-aaae-ad6df78cca69",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "application/vnd.jupyter.widget-view+json": {
+       "model_id": "20392d56f2194cdf83903d802a36a04b",
+       "version_major": 2,
+       "version_minor": 0
+      },
+      "text/plain": [
+       "FloatProgress(value=0.0, bar_style='info', description='Progress:', layout=Layout(height='25px', width='50%'),…"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "spark.sql('select * from schema_5781.demandpriority limit 5').show()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9d836a6b-5cb7-415a-b341-ec516c5c8f36",
    "metadata": {},
    "outputs": [],
    "source": []
