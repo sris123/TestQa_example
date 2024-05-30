@@ -1,0 +1,93 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "2daa305e-ac5c-47fc-9a05-3091e88afbf2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "_predict_df = \"select (Version.[Version Name]*Product.[Product].[208821]*Time.FiscalWeek*SalesAccount.[Account]*Location.[Location]*{Measure.[DPSellOutUnitsActuals],Measure.[Mean Pricing Save PCT],Measure.[Placement Count],Measure.[Promotion Count],Measure.[DPSellOutPrice]});\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "489fdbdf-304a-44d4-aaa7-19ba873622dd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from o9_common_utils.O9DataLake import O9DataLake, ResourceType, DataSource,PluginSetting"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "e5a8a6d1-fdcc-4759-8562-3aee52fd56e9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "predict_df = O9DataLake.register(\"predict_df\",data_source = DataSource.LS, entity_type = ResourceType.IBPL, query = _predict_df,plugin_setting = PluginSetting.Inputs)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "1f76e3eb-cb48-4f41-9bd5-a21237acdbe1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "O9DataLake.register(\"Product.[Product]\", data_source = DataSource.LS, entity_type = ResourceType.IBPL, plugin_setting = PluginSetting.SliceDimension)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "fe587051-6165-47c9-8dda-d484edd61c77",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "O9DataLake.register(\"output1\",data_source = DataSource.LS,entity_type = ResourceType.IBPL, plugin_setting = PluginSetting.Outputs)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "6a56dfae-30e7-43c9-9555-e723b8113d39",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "script_params = O9DataLake.register({\"var1\":\"20\",\"var2\":\"Test1\",\"var3\":\"newparam\"}, data_source = DataSource.LS, plugin_setting = PluginSetting.ScriptParam)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4dba81eb-2732-4a02-80c5-8f0b1be52bed",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "[AutoDSML2] Tenant Conda Environment",
+   "language": "python",
+   "name": "qa_autodsml2"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.10"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
